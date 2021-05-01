@@ -7,14 +7,14 @@ Server to check whether a number is prime
 First run server in a new terminal
 
 ```
-cd ./server/
+cd ./server
 go run server.go -port=9091
 ```
 
 Then open new terminal for each client
 
 ```
-cd ./client/
+cd ./client
 go run client.go -port=9091
 ```
 
