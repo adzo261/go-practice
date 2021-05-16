@@ -15,5 +15,6 @@ Repository meant for practicing backend development with Go. Stores concept-wise
 </p>
 <br>
 
+### 1. [TCP server and client](https://github.com/adzo261/backend-with-go/tree/master/cmd/tcp-server-client/)
 
-
+### 2. [Simple REST in plain Go](https://github.com/adzo261/backend-with-go/tree/master/cmd/rest-with-plain-go)
