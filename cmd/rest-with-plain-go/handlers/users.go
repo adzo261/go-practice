@@ -37,16 +37,18 @@ func (uh *Users) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		reg := regexp.MustCompile(`/([0-9]+)`)
 		g := reg.FindAllStringSubmatch(r.URL.Path, -1)
 
+		uh.logger.Printf("Found Matches: %s\n", g)
+
 		//If found more than one `/id` format, url is invalid
 		if len(g) != 1 {
-			uh.logger.Println("Invalid URI -  more than one id")
+			uh.logger.Println("Invalid URI -  More than one id")
 			http.Error(w, "Invalid URI", http.StatusBadRequest)
 			return
 		}
 
-		//Found more
+		//Found no capture group
 		if len(g[0]) != 2 {
-			uh.logger.Println("Invalid URI")
+			uh.logger.Println("Invalid URI - No capture group found")
 			http.Error(w, "Invalid URI", http.StatusBadRequest)
 			return
 		}
