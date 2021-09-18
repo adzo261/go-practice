@@ -1,11 +1,11 @@
 <div align="center">
-<h1> Backend development with Go from scratch
+<h1>Learning Go from scratch
   <p><br>
   <img src='./assets/images/gopher-student.png' width="25%" height="25%"/>   
   <br>
   </p>
 </h1>
-Repository meant for practicing backend development with Go. Stores concept-wise resources I read, and programs/projects I coded.
+Repository meant for practicing Go. Stores concept-wise resources I read, and programs/projects I coded.
 </div>
 <br>
 <p align="center">
